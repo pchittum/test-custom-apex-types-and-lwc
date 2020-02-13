@@ -1,0 +1,8 @@
+<template>
+    <lightning-input name="str1" value={str1} onchange={handleInputChange}></lightning-input>
+    <lightning-input name="str2" value={str2} onchange={handleInputChange}></lightning-input>
+    <lightning-input name="str3" value={str3} onchange={handleInputChange}></lightning-input>
+    <template if:true={apexResponse.data}>
+        <p>{apexResponse.data}</p>
+    </template>
+</template>
